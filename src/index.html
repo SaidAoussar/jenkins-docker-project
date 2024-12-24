@@ -3,33 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jenkins CI/CD Workflow</title>
+    <title>Modern Landing Page</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Jenkins CI/CD Workflow with Docker create by Said Aoussar test</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Example Workflow:</h2>
-            <ol>
-                <li>GitHub Repository Push → Webhook triggers Jenkins Job.</li>
-                <li>Jenkins Job delegates the build task to a JNLP Slave.</li>
-                <li>JNLP Slave clones the GitHub repository.</li>
-                <li>JNLP Slave builds/tests/deploys the application.</li>
-                <li>JNLP Slave reports results back to the Jenkins Master.</li>
-            </ol>
-        </section>
-        <section>
-            <h2>Status:</h2>
-            <p id="status">Pending deployment...</p>
-        </section>
-        <button onclick="updateStatus()">Update Status</button>
-    </main>
-    <footer>
-        <p>&copy; 2024 CI/CD Workflow Example</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">Logo</a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="menu-toggle">☰</div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Transform Your Business with Our Platform</h1>
+            <p>Streamline your workflow, boost productivity, and achieve better results with our innovative solutions.</p>
+            <div class="hero-buttons">
+                <a href="#" class="button button-primary">Get Started</a>
+                <a href="#" class="button button-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Lightning Fast</h3>
+                <p>Experience blazing-fast performance with our optimized platform built for speed.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>Secure & Reliable</h3>
+                <p>Your data is protected with enterprise-grade security and 99.9% uptime guarantee.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Mobile Ready</h3>
+                <p>Access your work from anywhere with our fully responsive mobile platform.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-content">
+            <h2>Ready to Get Started?</h2>
+            <p>Join thousands of satisfied customers who have transformed their business with our platform.</p>
+            <a href="#" class="button">Start Free Trial</a>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
