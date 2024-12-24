@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenkins CI/CD Workflow</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Jenkins CI/CD Workflow with Docker</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Example Workflow:</h2>
+            <ol>
+                <li>GitHub Repository Push → Webhook triggers Jenkins Job.</li>
+                <li>Jenkins Job delegates the build task to a JNLP Slave.</li>
+                <li>JNLP Slave clones the GitHub repository.</li>
+                <li>JNLP Slave builds/tests/deploys the application.</li>
+                <li>JNLP Slave reports results back to the Jenkins Master.</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Status:</h2>
+            <p id="status">Pending deployment...</p>
+        </section>
+        <button onclick="updateStatus()">Update Status</button>
+    </main>
+    <footer>
+        <p>&copy; 2024 CI/CD Workflow Example</p>
+    </footer>
+</body>
+</html>
